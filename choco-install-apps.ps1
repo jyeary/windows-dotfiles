@@ -23,6 +23,7 @@ choco install apache-netbeans.portable
 choco install maven
 choco install 7zip
 choco install steam
+choco install discord
 choco install postman
 #choco install notepadplusplus
 #choco install neovim --params "/NoNeovimOnPath"
