@@ -1,7 +1,7 @@
 $profileDir = Split-Path -parent $profile
 $componentDir = Join-Path $profileDir "components"
 
-Copy-Item -Path ./*.ps1 -Destination $profileDir -Exclude "bootstrap.ps1"
+Copy-Item -Path ./*.ps1 -Destination $profileDir -Exclude bootstrap.ps1,secrets.ps1,git-credentials.ps1
 Copy-Item -Path ./components/** -Destination $componentDir -Include **
 Copy-Item -Path ./home/** -Destination $home -Include **
 
