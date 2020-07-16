@@ -51,41 +51,41 @@ Set-ItemProperty "HKLM:\Software\Policies\Microsoft\Windows\Windows Search" "All
 
 # Uninstall Candy Crush Friends
 Get-AppxPackage "king.com.CandyCrushFriends" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "king.com.CandyCrushFriends" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "king.com.CandyCrushFriends" | Remove-AppxProvisionedPackage -Online
 
 # Uninstall Farm Heros Saga
 Get-AppxPackage "king.com.FarmHeroesSaga" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "king.com.FarmHeroesSaga" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "king.com.FarmHeroesSaga" | Remove-AppxProvisionedPackage -Online
 
 # Uninstall Booking.com
 Get-AppxPackage "PricelinePartnerNetwork.Booking.comUSABigsavingson" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "PricelinePartnerNetwork.Booking.comUSABigsavingson" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "PricelinePartnerNetwork.Booking.comUSABigsavingson" | Remove-AppxProvisionedPackage -Online
 
 # Unistall Simple Solitare
 Get-AppxPackage "26720RandomSaladGamesLLC.SimpleSolitaire" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "26720RandomSaladGamesLLC.SimpleSolitaire" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "26720RandomSaladGamesLLC.SimpleSolitaire" | Remove-AppxProvisionedPackage -Online
 
 # Uninstall NetFlix
 Get-AppxPackage "4DF9E0F8.Netflix" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "4DF9E0F8.Netflix" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "4DF9E0F8.Netflix" | Remove-AppxProvisionedPackage -Online
 
 # Uninstall McAfee Security
 Get-AppxPackage "5A894077.McAfeeSecurity" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "5A894077.McAfeeSecurity" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "5A894077.McAfeeSecurity" | Remove-AppxProvisionedPackage -Online
 
 # Uninstall Wild Tangent Games
 Get-AppxPackage "WildTangentGames.63435CFB65F55" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "WildTangentGames.63435CFB65F55" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "WildTangentGames.63435CFB65F55" | Remove-AppxProvisionedPackage -Online
 
 # Uninstall Amazon
 Get-AppxPackage "Amazon.com.Amazon" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "Amazon.com.Amazon" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "Amazon.com.Amazon" | Remove-AppxProvisionedPackage -Online
 
 # Uninstall Dropbox Promotion
 Get-AppxPackage "C27EB4BA.DropboxOEM" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "C27EB4BA.DropboxOEM" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "C27EB4BA.DropboxOEM" | Remove-AppxProvisionedPackage -Online
 
 # Uninstall Spotify
 Get-AppxPackage "SpotifyAB.SpotifyMusic" -AllUsers | Remove-AppxPackage
-Get-AppXProvisionedPackage -Online | Where DisplayName -like "SpotifyAB.SpotifyMusic" | Remove-AppxProvisionedPackage -Online
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -like "SpotifyAB.SpotifyMusic" | Remove-AppxProvisionedPackage -Online
 
