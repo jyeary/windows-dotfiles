@@ -2,31 +2,32 @@
 #Requires -RunAsAdministrator
 
 # Chocolatey
-#Write-Host "Installing Chocolatey" -ForegroundColor "Yellow"
-#Set-ExecutionPolicy Bypass -Scope Process -Force
-#[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-#iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+if ((which cinst) -eq $null) {
+    Write-Host "Installing Chocolatey" -ForegroundColor "Yellow"
+    iex (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
+}
 
 choco feature enable -n allowGlobalConfirmation
 
 Write-Host "Installing applications" -ForegroundColor "Yellow"
 
-# Base Applications
-choco install powershell-core --install-arguments='"ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 REGISTER_MANIFEST=1"'
-choco install  git.install --params "/GitAndUnixToolsOnPath /NoAutoCrlf"
-choco install cmder
-choco install vscode
-
 # Applications
-choco install zulu11
-choco install apache-netbeans.portable
-choco install maven
-choco install 7zip
-choco install steam
-choco install discord
-choco install postman
-#choco install notepadplusplus
-#choco install neovim --params "/NoNeovimOnPath"
+choco install 7zip --limit-output
+choco install apache-netbeans.portable --limit-output
+choco install cmder --limit-output
+choco install dashlane --limit-output
+choco install discord --limit-output
+choco install git.install --params "/GitAndUnixToolsOnPath /NoAutoCrlf" --limit-output
+choco install maven --limit-output
+#choco install neovim --params "/NoNeovimOnPath" --limit-output
+#choco install notepadplusplus --limit-output
+choco install postman --limit-output
+choco install powershell-core --install-arguments='"ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 REGISTER_MANIFEST=1"' --limit-output
+choco install steam --limit-output
+choco install vscode --limit-output
+choco install zulu11 --limit-output
+
+RefreshEnv
 
 Write-Host "Finished installing applications" -ForegroundColor "Yellow"
 
