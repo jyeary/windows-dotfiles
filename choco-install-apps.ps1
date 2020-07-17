@@ -2,9 +2,9 @@
 #Requires -RunAsAdministrator
 
 # Chocolatey
-if ((which cinst) -eq $null) {
+if ($null -eq (which cinst)) {
     Write-Host "Installing Chocolatey" -ForegroundColor "Yellow"
-    iex (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
+    Invoke-Expression (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
 }
 
 choco feature enable -n allowGlobalConfirmation
@@ -26,6 +26,10 @@ choco install powershell-core --install-arguments='"ADD_EXPLORER_CONTEXT_MENU_OP
 choco install steam --limit-output
 choco install vscode --limit-output
 choco install zulu11 --limit-output
+
+# TODO Move to an environment script?
+# Set JAVA_HOME and PATH
+[System.Environment]::SetEnvironmentVariable('JAVA_HOME','C:\Program Files\Zulu\zulu-11',[System.EnvironmentVariableTarget]::Machine)
 
 RefreshEnv
 
