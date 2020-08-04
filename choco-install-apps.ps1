@@ -13,6 +13,7 @@ Write-Host "Installing applications" -ForegroundColor "Yellow"
 
 # Applications
 choco install 7zip --limit-output
+choco install gradle --limit-output
 choco install apache-netbeans.portable --limit-output
 choco install cmder --limit-output
 choco install dashlane --limit-output
