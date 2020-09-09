@@ -19,6 +19,7 @@ choco install cmder --limit-output
 choco install dashlane --limit-output
 choco install discord --limit-output
 choco install firefox-dev --pre --limit-output
+choco install flashplayerplugin --limit-output
 choco install git.install --params "/GitAndUnixToolsOnPath /NoAutoCrlf" --limit-output
 choco install gradle --limit-output
 choco install maven --limit-output
