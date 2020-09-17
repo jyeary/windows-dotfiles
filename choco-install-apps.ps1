@@ -23,6 +23,7 @@ choco install flashplayerplugin --limit-output
 choco install git.install --params "/GitAndUnixToolsOnPath /NoAutoCrlf" --limit-output
 choco install gradle --limit-output
 choco install maven --limit-output
+choco install apache-netbeans.portable --limit-output
 #choco install neovim --params "/NoNeovimOnPath" --limit-output
 #choco install notepadplusplus --limit-output
 choco install postman --limit-output
