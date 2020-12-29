@@ -29,6 +29,8 @@ choco install apache-netbeans.portable --limit-output
 #choco install notepadplusplus --limit-output
 choco install postman --limit-output
 choco install powershell-core --install-arguments='"ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 REGISTER_MANIFEST=1"' --limit-output
+choco install pycharm-community --limit-output
+choco install python --limit-output
 choco install steam --limit-output
 choco install virtualbox --params "/NoDesktopShortcut /ExtensionPack" --limit-output
 choco install vscode --limit-output
