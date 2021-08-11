@@ -23,7 +23,7 @@ choco install git.install --params "/GitAndUnixToolsOnPath /NoAutoCrlf" --limit-
 choco install gradle --limit-output
 choco install maven --limit-output
 choco install mysql.workbench --limit-output
-choco install apache-netbeans.portable --limit-output
+choco install ngrok --limit-output
 #choco install neovim --params "/NoNeovimOnPath" --limit-output
 #choco install notepadplusplus --limit-output
 choco install postman --limit-output
