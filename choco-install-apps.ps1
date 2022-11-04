@@ -14,6 +14,7 @@ Write-Host "Installing applications" -ForegroundColor "Yellow"
 # Applications
 choco install 7zip --limit-output
 choco install apache-netbeans.portable --limit-output
+choco install etcher --limit-output
 choco install googlechrome --limit-output
 choco install cmder --limit-output
 choco install dashlane --limit-output
@@ -33,7 +34,7 @@ choco install python --limit-output
 choco install steam --limit-output
 choco install virtualbox --params "/NoDesktopShortcut /ExtensionPack" --limit-output
 choco install vscode --limit-output
-choco install zulu11 --limit-output
+#choco install zulu11 --limit-output
 
 # TODO Move to an environment script?
 # Set JAVA_HOME and PATH
