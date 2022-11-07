@@ -14,7 +14,7 @@ Write-Host "Installing applications" -ForegroundColor "Yellow"
 # Applications
 choco install 7zip --limit-output
 choco install apache-netbeans.portable --limit-output
-choco install etcher --limit-output
+# choco install etcher --limit-output
 choco install googlechrome --limit-output
 choco install cmder --limit-output
 choco install dashlane --limit-output
